@@ -14,7 +14,7 @@ If you want to start it when shell starts edit '/etc/bash.bashrc':</p>
 sudo nano /etc/bash.bashrc
 ```
 
-<p>and enter this lines to the end of the file</p>
+<p>and enter this lines to the end of the file.</p>
 
 ```
 if [[ -n $SSH_CONNECTION ]] ; then
