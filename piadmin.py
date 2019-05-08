@@ -25,7 +25,7 @@ while True:
     except ValueError:
         print('Sorry, your input is not correct.')
         continue
-    if op not in lista:                                                     # if number grater of 10 is imputed go back
+    if op not in lista:
         print('Sorry, your input is not correct pls. try again:')
         continue
     if op == '1':
