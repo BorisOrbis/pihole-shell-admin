@@ -1,1 +1,1 @@
-# pihole-shell-admin
+#PI hole admin from ssh
