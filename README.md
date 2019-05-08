@@ -17,8 +17,8 @@ sudo nano /etc/bash.bashrc
 <p>and enter this lines to the end of the file</p>
 
 ```
-	if [[ -n $SSH_CONNECTION ]] ; then
-		echo "Loading PiHole admin..."
-		./run.sh
-	fi
+if [[ -n $SSH_CONNECTION ]] ; then
+	echo "Loading PiHole admin..."
+	./run.sh
+fi
 ```
