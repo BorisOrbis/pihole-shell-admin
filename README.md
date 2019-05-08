@@ -10,13 +10,13 @@ Pi-hole has the ability to block traditional website adverts as well as adverts 
 Instal all in /home/pi
 If you want to start it when shell starts edit '/etc/bash.bashrc':</p>
 
-<code>sudo nano /etc/bash.bashrc</code>
+```sudo nano /etc/bash.bashrc```
 
 <p>and enter this lines to the end of the file</p>
 
-'''
+```
 	if [[ -n $SSH_CONNECTION ]] ; then
 		echo "Loading PiHole admin..."
 		./run.sh
 	fi
-'''
+```
