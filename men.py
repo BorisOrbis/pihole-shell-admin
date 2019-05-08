@@ -30,9 +30,6 @@ about = """
 |                                   |
 |      Shell admin for PiHole       |
 |             Ver 2.0               |
-|         bkugla@gmail.com          |
-|                                   |
-|          Za Martinu :-)           |
 |                                   |
 |   Repetitio mater studiorum est   |
 |                                   |
