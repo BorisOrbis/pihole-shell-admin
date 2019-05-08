@@ -13,8 +13,9 @@ If you want to start it when shell starts edit '/etc/bash.bashrc':</p>
 <code>sudo nano /etc/bash.bashrc</code>
 
 <p>and enter this lines to the end of the file</p>
-
-<code>if [[ -n $SSH_CONNECTION ]] ; then</code>
-<code>		echo "Loading PiHole admin..."</code>
-<code>		./run.sh</code></code>
+'''
+<code>if [[ -n $SSH_CONNECTION ]] ; then
+		echo "Loading PiHole admin..."
+<code>		./run.sh
 <code>	fi</code>
+'''
