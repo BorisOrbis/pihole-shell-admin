@@ -19,7 +19,7 @@ brisi = "'\e[3J'"
 #   main loop
 while True:
     try:
-#   for only nambers change str to int
+#   for only numbers change str to int
         lista = (["1", "2", "3", "4", "5","6", "q", "r", "x", "v", "p", "g", "d", "e", "a"])
         op = str(input('Please enter your selection: '))
     except ValueError:
