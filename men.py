@@ -29,7 +29,7 @@ about = """
  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 |                                   |
 |      Shell admin for PiHole       |
-|             Ver 2.0               |
+|             Ver 2.1               |
 |                                   |
 |   Repetitio mater studiorum est   |
 |                                   |
