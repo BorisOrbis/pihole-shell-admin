@@ -73,29 +73,39 @@ while True:
     if op == 'r':
         subprocess.call(['clear'])
         print('RPi is going to restart.')
-        sigurnost = str(input('Are you shure (Y/n):'))
-        if sigurnost == 'Y':
-            print('RPi restarting...')
-            subprocess.call(['sudo', 'reboot'])
-        if sigurnost == 'y':
-            print('Y must be capital')
-            continue
-        if sigurnost == 'n':
-            subprocess.call(['clear'])
-            print(me.menu)
+        while True:                                                     # Yes or no loop
+            try:
+                pro = (["Y", "n"])
+                sig = str(input('Are you sure (Y/n)'))
+            except ValueError:
+                print('Sorry, your input is not correct.')
+            if sig not in pro:
+                print('Please input Y ili n')
+            if sig == 'Y':
+                print('RPi restarting...')
+                subprocess.call(['sudo', 'reboot'])
+            if sig == 'n':
+                subprocess.call(['clear'])
+                print(me.menu)
+                break
     if op == 'x':
         subprocess.call(['clear'])
         print('RPi is going to shut down.')
-        sigurnost = str(input('Are you shure (Y/n):'))
-        if sigurnost == 'Y':
-            print('RPi is shuting down...')
-            subprocess.call(['sudo', 'halt'])
-        if sigurnost == 'y':
-            print('Y must be capital')
-            continue
-        if sigurnost == 'n':
-            subprocess.call(['clear'])
-            print(me.menu)
+        while True:
+            try:
+                pro = (["Y", "n"])
+                sig = str(input('Are you sure (Y/n)'))
+            except ValueError:
+                print('Sorry, your input is not correct.')
+            if sig not in pro:
+                print('Please input Y ili n')
+            if sig == 'Y':
+                print('RPi is shouting down...')
+                subprocess.call(['sudo', 'halt'])
+            if sig == 'n':
+                subprocess.call(['clear'])
+                print(me.menu)
+                break
     if op == 'a':
         subprocess.call(['clear'])
         print(me.about)
