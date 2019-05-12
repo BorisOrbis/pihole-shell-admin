@@ -6,7 +6,7 @@ When starting use 'python3 piadmin.py' or 'piadmin.sh'.</p>
 
 Pi-hole has the ability to block traditional website adverts as well as adverts in unconventional places, such as smart TVs and mobile operating system adverts.</p>
 
-<p>Install with</p>
+<p>Install with:</p>
 
 ```
 git clone https://github.com/BorisOrbis/pihole-shell-admin.git
