@@ -19,6 +19,6 @@ sudo nano /etc/bash.bashrc
 ```
 if [[ -n $SSH_CONNECTION ]] ; then
 	echo "Loading PiHole admin..."
-	./piadmin.sh
+	./run.sh
 fi
 ```
