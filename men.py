@@ -30,7 +30,6 @@ about = """
 |             Ver 2.0               |
 |       orbisboris@gmail.com        |
 |                                   |
-|          Za Martinu :-)           |
 |                                   |
 |   Repetitio mater studiorum est   |
 |                                   |
