@@ -10,6 +10,14 @@ sig = str  # declare sig and pro as strings
 pro = str
 
 
+def up_date():
+    update = subprocess.call(['bash', '/home/pi/pihole-shell-admin/update.sh'])  # update admin with update.sh
+    if update == 0:
+        print('Update successful...')
+    else:
+        print('Something went wrong pls. try later...')
+
+
 def end_clear():
     input('Press enter to continue...')
     subprocess.call(['clear'])

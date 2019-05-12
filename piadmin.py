@@ -111,11 +111,7 @@ while True:
         subprocess.call(['clear'])
         print('Pihole disabling...')
         print(me.update)
-        update = subprocess.call(['bash', '/home/pi/pihole-shell-admin/update.sh'])  # update admin with update.sh
-        if update == 0:
-            print('Update successful...')
-        else:
-            print('Something went wrong pls. try later...')
+        cle.up_date()
         cle.end_clear()
     if op == 'q':
         print('Thank you for using control panel and good bye!')
