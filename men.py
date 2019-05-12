@@ -28,10 +28,19 @@ about = """
 |                                   |
 |      Shell admin for PiHole       |
 |             Ver 2.0               |
-|       orbisboris@gmail.com        |
+|         bkugla@gmail.com          |
 |                                   |
+|          Za Martinu :-)           |
 |                                   |
 |   Repetitio mater studiorum est   |
 |                                   |
  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+"""
+
+update = """
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-
+|                                            |
+| After update you must restart the program. |
+|                                            |
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-
 """
