@@ -23,7 +23,6 @@ import subprocess
 import time
 import men as me
 import clear_scr as cle
-import os
 
 subprocess.call(['clear'])  # calling command clear in bash
 print(me.head)  # printing head and menu
@@ -112,7 +111,7 @@ while True:
         subprocess.call(['clear'])
         print('Pihole disabling...')
         print(me.update)
-        os.system('bash /home/pi/pihole-shell-admin/update.sh')  # update admin with update.sh
+        subprocess.call(['bash', '/home/pi/pihole-shell-admin/update.sh'])  # update admin with update.sh
         cle.end_clear()
     if op == 'q':
         print('Thank you for using control panel and good bye!')
