@@ -22,3 +22,4 @@ if [[ -n $SSH_CONNECTION ]] ; then
 	./run.sh
 fi
 ```
+<p>Then move run.sh to /home/pi</p>
