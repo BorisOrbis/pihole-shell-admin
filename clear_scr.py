@@ -1,5 +1,5 @@
 # Functions for clearing screen of shell 'end_clear'
-# and for Y/n choosing on the end of the program
+# and for choosing Y/n on the end of the program
 # used in piadmin.py.
 
 import subprocess
