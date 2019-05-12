@@ -23,6 +23,7 @@ import subprocess
 import time
 import men as me
 import clear_scr as cle
+import os
 
 subprocess.call(['clear'])  # calling command clear in bash
 print(me.head)  # printing head and menu
@@ -31,7 +32,7 @@ print(me.menu)
 # main loop
 while True:
     try:
-        lista = (["1", "2", "3", "4", "5", "6", "q", "r", "x", "v", "p", "g", "d", "e", "a"])
+        lista = (["1", "2", "3", "4", "5", "6", "q", "r", "x", "v", "p", "g", "d", "e", "a", "u"])
         op = str(input('Please enter your selection: '))
     except ValueError:
         print('Sorry, your input is not correct.')
@@ -106,6 +107,11 @@ while True:
         subprocess.call(['clear'])
         print('Pihole disabling...')
         subprocess.call(['pihole', 'disable'])
+        cle.end_clear()
+    if op == 'u':
+        subprocess.call(['clear'])
+        print('Pihole disabling...')
+        os.system('bash /home/pi/pihole-shell-admin/update.sh')  # update admin with update.sh
         cle.end_clear()
     if op == 'q':
         print('Thank you for using control panel and good bye!')
