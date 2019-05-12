@@ -111,6 +111,7 @@ while True:
     if op == 'u':
         subprocess.call(['clear'])
         print('Pihole disabling...')
+        print('After update you must restart the program.')
         os.system('bash /home/pi/pihole-shell-admin/update.sh')  # update admin with update.sh
         cle.end_clear()
     if op == 'q':
