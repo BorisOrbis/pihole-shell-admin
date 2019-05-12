@@ -11,9 +11,8 @@ Pi-hole has the ability to block traditional website adverts as well as adverts 
 ```
 git clone https://github.com/BorisOrbis/pihole-shell-admin.git
 ```
-<p>
-Instal all in /home/pi
-If you want to start it when shell starts edit '/etc/bash.bashrc':</p>
+
+<p>If you want to start it when shell starts edit '/etc/bash.bashrc':</p>
 
 ```
 sudo nano /etc/bash.bashrc
