@@ -31,7 +31,7 @@ print(me.menu)
 # main loop
 while True:
     try:
-        lista = (["1", "2", "3", "4", "5", "6", "q", "r", "x", "v", "p", "g", "d", "e", "a", "u"])
+        lista = (["1", "2", "3", "4", "5", "6", "7", "q", "r", "x", "v", "p", "g", "d", "e", "a", "u", "c"])
         op = str(input('Please enter your selection: '))
     except ValueError:
         print('Sorry, your input is not correct.')
@@ -69,6 +69,11 @@ while True:
         print('Flushing log...')
         subprocess.call(['pihole', '-f'])
         cle.end_clear()
+    if op == '7':
+        subprocess.call(['clear'])
+        print('Repair pihole...')
+        subprocess.call(['pihole', '-r'])
+        cle.end_clear()
     if op == 'r':
         subprocess.call(['clear'])
         print('RPi is going to restart.')
@@ -101,6 +106,12 @@ while True:
         subprocess.call(['clear'])
         print('Pihole enabling...')
         subprocess.call(['pihole', 'enable'])
+        cle.end_clear()
+    if op == 'c':
+        subprocess.call(['clear'])
+        print('Edit DHCP...')
+        cmd = ['sudo', 'nano', '/etc/pihole/dhcp.leases']
+        subprocess.call(cmd)
         cle.end_clear()
     if op == 'd':
         subprocess.call(['clear'])

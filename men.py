@@ -16,6 +16,7 @@ menu = """
  4. Debug         | d. Disable
  5. Chronometer   | e. Enable
  6. Flush log     | a. About
+ 7. Repair        | c. Edit dhcp
 -------------------------------------
  r. Restart RPi   | x. Shutdown RPi
 -------------------------------------
