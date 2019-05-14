@@ -110,7 +110,13 @@ while True:
     if op == 'c':
         subprocess.call(['clear'])
         print('Edit DHCP...')
-        cmd = ['sudo', 'nano', '/etc/pihole/dhcp.leases']
+        cma = ['sudo', 'systemctl', 'stop', 'dnsmasq']  #do tu
+        subprocess.call(cma)
+        cmb = ['sudo', 'nano', '/etc/pihole/dhcp.leases']
+        subprocess.call(cmb)
+        cmc = ['sudo', 'systemctl', 'restart', 'dnsmasq']  #do tu
+        subprocess.call(cmc)
+        cmd = ['sudo', 'systemctl', 'status', 'dnsmasq']  #do tu
         subprocess.call(cmd)
         cle.end_clear()
     if op == 'd':
