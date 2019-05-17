@@ -1,28 +1,28 @@
 # Adding string to variable head, menu and about with """
 
-head = """
- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
-|                                   |
-|       Pi Hole control panel       |
-|            OrbisBoris             |
-|                                   |
- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"""
+head = """ ----------------------------------------------
+  _  _      ___ _   _        _            _    
+ /  / \ |\ | | |_) / \ |    |_) /\  |\ | |_ |
+ \_ \_/ | \| | | \ \_/ |_   |  /--\ | \| |_ |_
+                                                                      
+             Pi Hole control panel  
+                  OrbisBoris"""
 
 menu = """
--------------------------------------
- 1. Update PiHole | v. Version
- 2. Status        | p. Password
- 3. Restart DNS   | g. Update Gravity
- 4. Debug         | d. Disable
- 5. Chronometer   | e. Enable
- 6. Flush log     | a. About
- 7. Repair        | u. Update
--------------------------------------
- r. Restart RPi   | x. Shutdown RPi
--------------------------------------
- q. Exit
--------------------------------------
-"""
+ ----------------------------------------------
+|   1. Update PiHole   |    v. Version         |
+|   2. Status          |    p. Password        |
+|   3. Restart DNS     |    g. Update Gravity  |
+|   4. Debug           |    d. Disable         |
+|   5. Chronometer     |    e. Enable          |
+|   6. Flush log       |    a. About           |
+|   7. Repair          |    u. Update          |
+ ----------------------------------------------
+|   r. Restart RPi     |    x. Shutdown RPi    |
+ ----------------------------------------------
+|                                   q. Exit    |
+ ----------------------------------------------
+ """
 
 about = """
  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
