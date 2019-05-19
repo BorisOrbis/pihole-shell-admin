@@ -25,8 +25,8 @@ import men as me
 import clear_scr as cle
 
 subprocess.call(['clear'])  # calling command clear in bash
-print(me.head)  # printing head and menu
-print(me.menu)
+# print(me.head)
+print(me.menu)  # print menu
 
 # main loop
 while True:
