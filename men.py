@@ -6,9 +6,8 @@ head = """ ----------------------------------------------
  \_ \_/ | \| | | \ \_/ |_   |  /--\ | \| |_ |_
                                                                       
              Pi Hole control panel  
-                  OrbisBoris"""
+                  OrbisBoris
 
-menu = """
  ----------------------------------------------
 |   1. Update PiHole   |    v. Version         |
 |   2. Status          |    p. Password        |
