@@ -23,6 +23,9 @@ import subprocess
 import time
 import men as me
 import clear_scr as cle
+import random
+
+chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@£$%&*()?0123456789'
 
 subprocess.call(['clear'])  # calling command clear in bash
 # print(me.head)
@@ -31,7 +34,7 @@ print(me.menu)  # print menu
 # main loop
 while True:
     try:
-        lista = (["1", "2", "3", "4", "5", "6", "7", "q", "r", "x", "v", "p", "g", "d", "e", "a", "u", "c"])
+        lista = (["1", "2", "3", "4", "5", "6", "7", "0", "q", "r", "x", "v", "p", "g", "d", "e", "a", "u", "c"])
         op = str(input('Please enter your selection: '))
     except ValueError:
         print('Sorry, your input is not correct.')
@@ -73,6 +76,22 @@ while True:
         subprocess.call(['clear'])
         print('Repair pihole...')
         subprocess.call(['pihole', '-r'])
+        cle.end_clear()
+    if op == '0':
+        subprocess.call(['clear'])
+        print('Generate password...')
+        number = input('Enter how many pass: ')
+        number = int(number)
+        length = input('Enter the pass length: ')
+        length = int(length)
+        print('\nHere are your passwords:')
+        print('--------------------------')
+        for pwd in range(number):
+            password = ''
+            for c in range(length):
+                password += random.choice(chars)
+            print(password)
+        print('--------------------------')
         cle.end_clear()
     if op == 'r':
         subprocess.call(['clear'])
