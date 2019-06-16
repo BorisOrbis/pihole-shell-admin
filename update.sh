@@ -9,7 +9,7 @@ if [ $LOCAL = $REMOTE ]; then
     echo "Up-to-date"
 elif [ $LOCAL = $BASE ]; then
     echo "Need to pull"
-    cd /home/pi/pihole-shell-admin && git reset --hard && git pull "https://github.com/BorisOrbis/pihole-shell-admin.git" &>/dev/null
+    git reset --hard && git pull &>/dev/null
 #elif [ $REMOTE = $BASE ]; then
 #    echo "Need to push"
 else
