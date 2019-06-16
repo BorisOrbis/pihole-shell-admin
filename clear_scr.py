@@ -13,7 +13,7 @@ pro = str
 def up_date():
     update = subprocess.call(['bash', '/home/pi/pihole-shell-admin/update.sh'])  # update admin with update.sh
     if update == 0:
-        print('Update successful...')
+        print('All done...')
     else:
         print('Something went wrong pls. try later...')
 
