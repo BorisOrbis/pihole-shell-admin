@@ -26,4 +26,10 @@ if [[ -n $SSH_CONNECTION ]] ; then
 	./run.sh
 fi
 ```
-<p>Then move run.sh to /home/pi</p>
+<p>Then move run.sh to /home/pi and set execute permission on your script using chmod command</p>
+
+```
+chmod +x run.sh
+```
+
+
