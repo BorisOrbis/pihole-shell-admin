@@ -1,13 +1,6 @@
 # Adding string to variable head, menu and about with """
 
-menu = """ ----------------------------------------------
-  _  _      ___ _   _        _            _    
- /  / \ |\ | | |_) / \ |    |_) /\  |\ | |_ |
- \_ \_/ | \| | | \ \_/ |_   |  /--\ | \| |_ |_
-                                                                      
-             Pi Hole control panel  
-                  OrbisBoris
-
+menu = """
  ----------------------------------------------
 |   1. Update PiHole   |    v. Version         |
 |   2. Status          |    p. Password        |
